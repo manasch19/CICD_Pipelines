@@ -1,0 +1,19 @@
+{
+    "pipelines": [
+		{
+            "job": "Create Process Schedule",
+            "processName": "CE_Activity_GlobalKronos_To_Smartshop",
+            "atomName": "Batch_STG_Atom",
+            "atomType": "Cloud",
+            "years": "*",
+            "months": "*",
+            "days": "*",
+            "hours": "0-23",
+            "minutes": "0-59\\/5",
+            "daysOfWeek": "*",
+            "daysOfMonth": "*",
+            "env": "GP_AWS_STG_Batch"
+        }
+		
+    ]
+}
