@@ -1,0 +1,100 @@
+{
+	"pipelines": [
+		{
+			"job": "Create Package",
+			"processName": "CE_Opportunity_SFDC",
+			"packageVersion": "31.0",
+			"componentType": "process",
+			"componentId": "4229b1d2-27ff-4c95-a1ea-e549280739ad",
+			"notes": "Creating Package for CE_Opportunity_SFDC",
+			"extractComponentXmlFolder": "CE_Opportunity_SFDC",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		},
+		{
+			"job": "Create Package",
+			"processName": "CE_PurchaseOrder_SSS",
+			"packageVersion": "69.0",
+			"componentType": "process",
+			"componentId": "c48b412d-7da3-4bf2-bf52-325b853a59de",
+			"notes": "Creating Package for CE_PurchaseOrder_Sierra",
+			"extractComponentXmlFolder": "CE_PurchaseOrder_Sierra",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		},
+		{
+			"job": "Create Package",
+			"processName": "Route_PurchaseOrderToSubProcess",
+			"packageVersion": "4.0",
+			"componentType": "processroute",
+			"componentId": "9de14ffa-890d-40e9-8a6e-f49f9856d3a1",
+			"notes": "Creating Package for Route_PurchaseOrderToSubProcess",
+			"extractComponentXmlFolder": "Route_PurchaseOrderToSubProcess",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		},
+		{
+			"job": "Create Package",
+			"processName": "PE_PurchaseOrder_Seirra",
+			"packageVersion": "3.0",
+			"componentType": "process",
+			"componentId": "1e5e3793-9577-4f92-8fa8-383b61fc7ccc",
+			"notes": "Creating Package for PE_PurchaseOrder_Seirra",
+			"extractComponentXmlFolder": "PE_PurchaseOrder_Seirra",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		},
+		{
+			"job": "Create Package",
+			"processName": "PE_PurchaseOrder_Foxtrot",
+			"packageVersion": "11.0",
+			"componentType": "process",
+			"componentId": "cd871775-c6e8-4852-9d55-0134cda2ce89",
+			"notes": "Creating Package for PE_PurchaseOrder_Foxtrot",
+			"extractComponentXmlFolder": "PE_PurchaseOrder_Foxtrot",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		},
+		{
+			"job": "Create Package",
+			"processName": "CE_RFQ_Sierra",
+			"packageVersion": "3.0",
+			"componentType": "process",
+			"componentId": "d52e1b1b-2c88-4342-b5d7-05183d78cdc2",
+			"notes": "Creating Package for CE_RFQ_Sierra",
+			"extractComponentXmlFolder": "CE_RFQ_Sierra",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		},
+		{
+			"job": "Create Package",
+			"processName": "PE_PurchaseOrder_Uniform",
+			"packageVersion": "36.0",
+			"componentType": "process",
+			"componentId": "8a0f471d-3467-47c7-b7ed-47b2da046666",
+			"notes": "Creating Package for PE_PurchaseOrder_Uniform",
+			"extractComponentXmlFolder": "PE_PurchaseOrder_Uniform",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		},
+		{
+			"job": "Create Package",
+			"processName": "PE_PurchaseOrder_BaaN",
+			"packageVersion": "10.0",
+			"componentType": "process",
+			"componentId": "2a0c630a-8b79-495f-b3b6-751382ac9410",
+			"notes": "Creating Package for PE_PurchaseOrder_BaaN",
+			"extractComponentXmlFolder": "PE_PurchaseOrder_BaaN",
+			"tag": "TRUE",
+			"listenerStatus": "RUNNING",
+			"env": "GP_AWS_DEV_Env"
+		}
+	]
+}
