@@ -1,0 +1,107 @@
+{
+	"pipelines": [
+		{
+			"job": "Deploy Package",
+			"processName": "CE_Opportunity_SFDC",
+			"packageVersion": "31.0",
+			"componentType": "process",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "CE_PurchaseOrder_SSS",
+			"packageVersion": "87.0",
+			"componentType": "process",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "Route_PurchaseOrderToSubProcess",
+			"packageVersion": "20.0",
+			"componentType": "processroute",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "PE_PurchaseOrder_Seirra",
+			"packageVersion": "3.0",
+			"componentType": "process",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "PE_PurchaseOrder_Foxtrot",
+			"packageVersion": "20.0",
+			"componentType": "process",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "PE_Purchaseorder_ECHO",
+			"packageVersion": "9.0",
+			"componentType": "process",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "CE_RFQ_Sierra",
+			"packageVersion": "3.0",
+			"componentType": "process",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "OPPORTUNITY_SFDC_API",
+			"packageVersion": "11.0",
+			"componentType": "webservice",
+			"notes": "Deploying to stage for UAT",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "CE_PurchaseOrder_SSS_To_Uniform_Baan",
+			"packageVersion": "8.0",
+			"componentType": "process",
+			"componentId": "63818766-bf92-4300-b11e-95d273ca9ca8",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "Route_PurchaseOrderToSubProcess_Uniform",
+			"packageVersion": "4.0",
+			"componentType": "processroute",
+			"componentId": "1eb1d594-95cd-4b60-a83d-622ab0696304",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "PE_PurchaseOrder_Uniform",
+			"packageVersion": "43.0",
+			"componentType": "process",
+			"componentId": "8a0f471d-3467-47c7-b7ed-47b2da046666",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		},
+		{
+			"job": "Deploy Package",
+			"processName": "PE_PurchaseOrder_BaaN",
+			"packageVersion": "13.0",
+			"componentType": "process",
+			"componentId": "2a0c630a-8b79-495f-b3b6-751382ac9410",
+			"env": "GP_AWS_STG_RealTime_Env",
+			"listenerStatus": "RUNNING"
+		}
+		
+		
+	]
+}
