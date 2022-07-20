@@ -1,0 +1,60 @@
+{
+  "pipelines": [
+    {
+      "job": "Update Environment Extensions",
+      "env": "GP_AWS_STG_RealTime_Env",
+      "key": "arn:aws:secretsmanager:us-east-1:325381443140:secret:Boomi_igr_stg-6BPhRu",
+      "extensionJson": {
+        "@type": "EnvironmentExtensions",
+        "connections": {
+          "@type": "Connections",
+          "connection": [
+            {
+              "@type": "Connection",
+              "field": [
+                {
+                  "@type": "field",
+                  "id": "url",
+                  "value": "https://gpspstest.bigmachines.com",
+                  "usesEncryption": "false",
+                  "useDefault": false
+                },
+                {
+                  "@type": "field",
+                  "id": "useBasicAuth",
+                  "value": "",
+                  "usesEncryption": "false",
+                  "useDefault": false
+                },
+                {
+                  "@type": "field",
+                  "id": "user",
+                  "valueFrom": "boomi_stg_CPQ_user",
+                  "usesEncryption": "false",
+                  "useDefault": false
+                },
+                {
+                  "@type": "field",
+                  "id": "password",
+                  "valueFrom": "boomi_stg_CPQ_password",
+                  "usesEncryption": "true",
+                  "useDefault": false
+                }
+              ],
+              "id": "1f110e5b-23b7-4bbf-9e31-67d1a2013bae",
+              "name": "HTTP_CPQ_Commercial_CN"
+            }
+          ]
+        },
+        "properties": {
+          "@type": "",
+          "property": []
+        },
+        "environmentId": "[Update ID]",
+        "partial": "true",
+        "extensionGroupId": "",
+        "id": "[Same as environmentId]"
+      }
+    }
+  ]
+}
